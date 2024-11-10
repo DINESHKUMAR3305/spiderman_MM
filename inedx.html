@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man: Miles Morales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">SPIDER-MAN: Miles Morales</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('buy')">Buy Now</a></li>
+                <li><a href="#" onclick="showPage('trailer')">Watch Trailer</a></li>
+                <li><a href="#" onclick="showPage('profile')">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Home Page Section -->
+    <section id="home" class="content active">
+        <h1>SPIDER-MAN</h1>
+        <p>Miles Morales is Marvel's newest New York Spider-Man. After his father’s untimely death...</p>
+        <button onclick="showPage('buy')">BUY NOW</button>
+        <button onclick="showPage('trailer')">WATCH TEASER</button>
+    </section>
+
+    <!-- Buy Now Section -->
+    <section id="buy" class="content">
+        <h1>Buy Books</h1>
+        <div class="book-gallery">
+            <div class="book">
+                <img src="volume_1.jpeg" alt="Book 1">
+                <h3>Spider-Man: Miles Morales - Volume 1</h3>
+                <p>Price: $19.99</p>
+                <a href="order.html"><button>Buy Now</button></a>
+            </div>
+            <div class="book">
+                <img src="volume_2.jpeg" alt="Book 2">
+                <h3>Spider-Man: Miles Morales - Volume 2</h3>
+                <p>Price: $22.99</p>
+                <a href="order.html"><button>Buy Now</button></a>
+            </div>
+            <div class="book">
+                <img src="volume_3.jpeg" alt="Book 3">
+                <h3>Spider-Man: Into the Spider-Verse</h3>
+                <p>Price: $18.99</p>
+                <a href="order.html"><button>Buy Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch Trailer Section -->
+    <section id="trailer" class="content">
+        <h1>Watch Trailer</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hY3qiRq0yEM?si=gAWFkzyiDW3XJZJD" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="content profile-card">
+        <h1>Profile</h1>
+        <div class="profile-details">
+            <img src="profile.jpeg" alt="Profile Picture">
+            <div>
+                <p><strong>Name:</strong> Miles Morales</p>
+                <p><strong>Role:</strong> Spider-Man</p>
+                <p><strong>Powers:</strong> Electric Venom Strike, Invisibility</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #141414;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: linear-gradient(to right, #b00000, #0b3d91);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 1rem;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home Page with Background Image */
+#home {
+    background-image: url('spiderman-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+#home p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+#home button {
+    margin: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#home button:hover {
+    background-color: #d00000;
+}
+
+/* Buy Now Section */
+#buy {
+    padding: 2rem;
+    text-align: center;
+}
+
+#buy h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.book-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.book {
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.book h3 {
+    color: #141414;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.book p {
+    color: #141414;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.book button {
+    padding: 0.5rem 1rem;
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book button:hover {
+    background-color: #d00000;
+}
+
+/* Other Sections */
+#trailer, #profile {
+    padding: 2rem;
+    text-align: center;
+}
+
+#trailer iframe {
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    display: none;
+    padding: 2em;
+}
+
+.content.active {
+    display: block;
+}
+
+/* Profile Card */
+.profile-card {
+
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.profile-details {
+    background-color:#b00000;
+    color: #141414;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    gap: 1em;
+}
+
+.profile-details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-details div {
+    text-align: left;
+}
+
+/* Book Gallery */
+.book-gallery {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.book {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book button {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.book button:hover {
+    background-color: #555;
+}
+
+/* Order Form */
+.order-form {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Added shadow to make the form stand out */
+    color: #333;  /* Added text color */
+}
+
+.order-form h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333; /* Color for heading */
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;  /* Color for label text */
+}
+
+.order-form input,
+.order-form textarea {
+    width: 100%;
+    padding: 0.75em; /* Adjust padding for better spacing */
+    margin-bottom: 1.5em;  /* Increased margin for better spacing between inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* Added background color */
+    font-size: 1rem;
+}
+
+.order-form button {
+    width: 100%;
+    padding: 0.7em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.order-form button:hover {
+    background-color: #555; /* Added hover effect for button */
+}
